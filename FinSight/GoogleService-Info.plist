@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDtdjfVzPc87nzDnFUrlA0Og1y61MnNBvY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>164868968175</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Test.FinSight</string>
+	<key>PROJECT_ID</key>
+	<string>finsight-lite-9e6ae</string>
+	<key>STORAGE_BUCKET</key>
+	<string>finsight-lite-9e6ae.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:164868968175:ios:b2c159ed7e7ce24dd7151a</string>
+</dict>
+</plist>
