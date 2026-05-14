@@ -1,6 +1,6 @@
 # FinSight
 
-A premium iOS fintech app that analyzes your spending transactions and generates human-readable behavioral insights — built with SwiftUI, MVVM, Firebase, and Swift Charts.
+FinSight is an AI-inspired personal finance analytics app that helps users understand spending behavior through intelligent insights, interactive visualizations, and real-time expense tracking.
 
 ![Platform](https://img.shields.io/badge/Platform-iOS%2017+-blue?logo=apple)
 ![Swift](https://img.shields.io/badge/Swift-5.9-orange?logo=swift)

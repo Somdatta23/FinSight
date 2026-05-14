@@ -13,9 +13,15 @@ class AuthViewModel: ObservableObject {
     @Published var authError: String?
     @Published var isLoading = false
     @Published var didAuthenticate = false
+    @Published var resetEmailSent = false
     
     private let authService = AuthService.shared
     private var cancellables = Set<AnyCancellable>()
+    
+    var isEmailValid: Bool {
+        let pattern = #"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"#
+        return email.range(of: pattern, options: .regularExpression) != nil
+    }
     
     init() {
         // Initialize with current user data if available
@@ -70,8 +76,18 @@ class AuthViewModel: ObservableObject {
     }
     
     func resetPassword() {
-        authService.resetPassword(email: email) { _ in
-            // Handle success/failure UI if needed
+        guard isEmailValid else {
+            authError = "Please enter a valid email address."
+            return
+        }
+        authError = nil
+        resetEmailSent = false
+        authService.resetPassword(email: email) { [weak self] success in
+            DispatchQueue.main.async {
+                if success {
+                    self?.resetEmailSent = true
+                }
+            }
         }
     }
     
